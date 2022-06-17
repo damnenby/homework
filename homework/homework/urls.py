@@ -15,7 +15,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from blog.views import index, view_comments, view_comments_start_middle_finish, change_comments_start_middle_finish, delete_k_objects, get_last_two_objects
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', index, name="index"),
+    path('comments', view_comments, name='comments'),
+    path('task2', view_comments_start_middle_finish, name='task2'),
+    path('task3', change_comments_start_middle_finish, name='task3'),
+    path('task5', delete_k_objects, name='task5'),
+    path('task6', get_last_two_objects, name='task6')
 ]
