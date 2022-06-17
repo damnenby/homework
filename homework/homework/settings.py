@@ -55,7 +55,7 @@ ROOT_URLCONF = 'homework.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'homework.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'homework',
-        'USER': 'damnenby',
+        'NAME': 'django_homework',
+        'USER': 'pyouser',
         'PASSWORD': 'mypass',
         'HOST': 'localhost',
         'PORT': '5432'

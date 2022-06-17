@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    {% block content %}
+    {% endblock %}
+    <div><a href="{% url 'index' %}">To the index page</a></div>
+    <div><a href="{% url 'comments' %}">View text of 5 last comments</a></div>
+    <div><a href="{% url 'task2' %}">task2</a></div>
+    <div><a href="{% url 'task3' %}">task3</a></div>
+    <div><a href="{% url 'task5' %}">task5</a></div>
+    <div><a href="{% url 'task6' %}">task6</a></div>
+</div>
+</body>
+</html>
